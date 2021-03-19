@@ -1,73 +1,79 @@
 ***ANSWER ALL QUESTIONS BELOW***
 
 Why do we need data structure?
-Answer:
+Answer: Data structures provide a means to manage large amounts of data efficiently for uses such as large databases and internet indexing services. Usually, efficient data structures are key to designing efficient algorithms.
 
 What are the various operations that can be performed on different data structures?
-Answer:
+Answer: Insertion: Insertion means addition of a new data element in a data structure. Deletion: Deletion means removal of a data element from a data structure if it is found.
 
 When would we use data structures in the real world?
-Answer:
+Answer: To store the possible moves in a chess game. To store a set of ﬁxed key words which are referenced very frequently. To store the customer order information in a drive-in burger place.
 
 What is an Array?
-Answer:
+Answer: An array is a container object that holds a fixed number of values of a single type.
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer: An array is basic functionality provided by Java. ArrayList is part of collection framework in Java.
 
 What is a LinkedList?
-Answer:
+Answer: The LinkedList stores its items in "containers." The list has a link to the first container and each container has a link to the next container in the list.
 
 How is an Array different from LinkedList?
-Answer:
+Answer: An array is a collection of elements of a similar data type. Linked List is an ordered collection of elements of the same type in which each element is connected to the next using pointers.
 
 What is a Queue?
-Answer:
+Answer: Java Queue is an interface available in java, We can use Queue to store elements before processing those elements.
 
 What is a Stack (not Java memory - refers to data structure)?
-Answer:
+Answer: a stack is a data structure used to store a collection of objects. Individual items can be added and stored in a stack using a push operation.
 
 What is FIFO and LIFO?
-Answer:
+Answer: FIFO First In First Out and LIFO Last In First Out.
 
 Explain Big O Notation?
-Answer:
+Answer: Big O Notation is the language we use for talking about how long an algorithm takes to run. It is how we compare the efficiency of different approaches to a problem.
 
 What is the best case to search an element from an array?
-Answer:
+Answer: If we were searching for the first element, Linear Search would be the most efficient one here. It's also easy to see the Binary, Interpolation and Fibonacci Search show the best results for this particular array.
 
 What is the worst case to search an element from an array?
-Answer:
+Answer: The worst-case time complexity is linear. Similarly, searching for an element for an element can be expensive, since you may need to scan the entire array.
 
 Describe what a tree data structure is?
-Answer:
+Answer: A tree is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear data structures. A tree can be empty with no nodes or a tree is a structure consisting of one node called the root and zero or one or more subtrees.
 
 Describe what a graph data structure is?
-Answer:
+Answer: A graph is a common data structure that consists of a finite set of nodes (or vertices) and a set of edges connecting them.
 
 What is the difference between the HashTable and HashMap?
-Answer:
+Answer: HashMap allows one null key and multiple null values whereas Hashtable doesn't allow any null key or value.
 
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model
-Answer:
+Answer: An RDBMS is a DBMS which manages a relational database. A relational database stores data in tables.
+A network database model is a database model that allows multiple records to be linked to the same owner file.
+A hierarchical database model is a data model in which the data are organized into a tree-like structure. The data are stored as records which are connected to one another through links.
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:
+Answer: HashMap in Java works on hashing principles. It is a data structure which allows us to store object and retrieve it in constant time O(1) provided we know the key. ... Objects are stored by calling put(key, value) method of HashMap and retrieved by calling get(key) method.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
-Answer:
+Answer: Thrown to indicate that an array has been accessed with an illegal index. The index is either negative or greater than or equal to the size of the array.
 
 What are the different ways of copying an array into another array?
-Answer:
+Answer: There are mainly four different ways to copy all elements of one array into another array in Java.
+        Manually.
+        Arrays
+        System.array
+        Object.clone(
 
 What is DFS and BFS?
-Answer:
+Answer: BFS stands for Breadth First Search. DFS stands for Depth First Search.
 
 What is Recursion?
-Answer:
+Answer: Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
 
 What are linear and non-linear data Structures?
-Answer:
+Answer: In linear data structure, data elements are sequentially connected and each element is traversable through a single run. In non-linear data structure, data elements are hierarchically connected and are present at various levels.
 
 
 Outline different sorting algorithms and their time complexities:

@@ -1,6 +1,7 @@
 package math.problems;
 
 public class Factorial {
+    private static Object Factorial;
 
     /*
      Write a method to return the Factorial of any given number using Recursion as well as Iteration
@@ -12,4 +13,7 @@ public class Factorial {
 
 
     }
-}
+
+
+    }
+
