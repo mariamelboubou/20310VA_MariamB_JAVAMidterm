@@ -9,7 +9,7 @@ import java.util.List;
 
 public class CsvReader {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ArrayIndexOutOfBoundsException {
         /*
          Comma-Separated Value(CSV) of CodeLab status is downloaded and it parsed.
          Based on number of solution you solved, message is generated for you.
@@ -31,7 +31,7 @@ public class CsvReader {
                     continue;
                 }
                 String[] name = line.split(csvSplitBy);
-                roster.add(new Trainee(name[5].replace("\"", ""), name[4].replace("\"",
+                roster.add(new Trainee(name[9].replace("\"", ""), name[4].replace("\"",
                         ""), Integer.parseInt(name[10])));
             }
         } catch (IOException e) {

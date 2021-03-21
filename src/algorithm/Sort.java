@@ -39,13 +39,31 @@ public class Sort {
     public int[] insertionSort(int[] array) {
         final long startTime = System.currentTimeMillis();
         int[] list = array;
-        //implement here
+
+        for (int j=0; j<array.length -1 ; j++){
+            int min =j;
+            for (int i =j +1; i < array.length; i++){
+                if(array[i]< array [min])
+                    min=i;
+            }
+            int temp= array[min];
+            array[min]= array[j];
+            array[j]=temp;
+
+        }
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return list;
     }
+
+
+
+
+
+
+
 
     public int[] bubbleSort(int[] array) {
         int[] list = array;
