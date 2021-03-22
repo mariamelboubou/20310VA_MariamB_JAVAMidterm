@@ -35,6 +35,10 @@ public class FindLowestDifference {
 
     }
 
+    public static int findLowestDifference(int[] arr1, int[] arr2) {
+        return 0;
     }
+}
+
 
 

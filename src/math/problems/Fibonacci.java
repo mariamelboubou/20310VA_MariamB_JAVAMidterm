@@ -26,4 +26,7 @@ public class Fibonacci {
     }
 
 
+    public static int fibonacci(int i) {
+        return 0;
+    }
 }
