@@ -36,33 +36,31 @@ public class Sort {
         return list;
     }
 
-    public int[] insertionSort(int[] array) {
+
+
+    public Object insertionSort(int[] array) {
         final long startTime = System.currentTimeMillis();
         int[] list = array;
+        //implement here
 
-        for (int j=0; j<array.length -1 ; j++){
-            int min =j;
-            for (int i =j +1; i < array.length; i++){
-                if(array[i]< array [min])
-                    min=i;
+        for (int j = 1; j < array.length; j++) {
+            int current = array[j];
+            int i = j - 1;
+            while ((i > -1) && (array[i] > current)) {
+                array[i + 1] = array[i];
+                i--;
             }
-            int temp= array[min];
-            array[min]= array[j];
-            array[j]=temp;
+            array[i + 1] = current;
+
+
+            final long endTime = System.currentTimeMillis();
+            final long executionTime = endTime - startTime;
+            this.executionTime = executionTime;
+            return list;
 
         }
-
-        final long endTime = System.currentTimeMillis();
-        final long executionTime = endTime - startTime;
-        this.executionTime = executionTime;
-        return list;
+        return null;
     }
-
-
-
-
-
-
 
 
     public int[] bubbleSort(int[] array) {

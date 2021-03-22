@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends abstractClass implements Employee {
 
     /*
     This class should implement the Employee interface. You can do that by directly implementing it, however you must
@@ -21,7 +21,21 @@ public class EmployeeInfo {
     /*
      * Make sure to declare and use static, non-static & final fields
      */
+
+
     static String companyName;
+    
+    int companyDOB;
+    
+    String companyLoaction;
+    
+    private int companyContact;
+
+    static final String companyLogo;
+    
+    static {companyLogo = " M & A ";}
+
+
 
     /*
      You must implement the logic for below 2 methods and
@@ -31,23 +45,79 @@ public class EmployeeInfo {
 
     /*
      You must have/use multiple constructors
-     */
-    public EmployeeInfo(int employeeId) {
+      */
+
+    public EmployeeInfo(int id, String name, String department, int hours, int daysOfWeek, int salary, String benefits, int dob, int ssn, String ftOrPT, boolean workspace, int employeeYearsOfExperience, String nationality, int startDate, boolean isAlive, int companyDOB, String companyLoaction, int companyContact) {
+        super(id, name, department, hours, daysOfWeek, salary, benefits, dob, ssn, ftOrPT, workspace, employeeYearsOfExperience, nationality, startDate, isAlive);
+        this.companyDOB = companyDOB;
+        this.companyLoaction = companyLoaction;
+        this.companyContact = companyContact;
+    }
+
+    public EmployeeInfo(int LaughForLaughs, int companyDOB, String companyLoaction, int companyContact) {
+        super(LaughForLaughs);
+        this.companyDOB = companyDOB;
+        this.companyLoaction = companyLoaction;
+        this.companyContact = companyContact;
+    }
+
+    public EmployeeInfo(int LaughForLaughs) {
+        super(LaughForLaughs);
+    }
+
+    @Override
+    public int employeeId() {
+        return 0;
+    }
+
+    @Override
+    public String employeeName() {
+        return null;
+    }
+
+    @Override
+    public void assignDepartment() {
 
     }
 
-    public EmployeeInfo(String name, int employeeId) {
+    @Override
+    public int calculateSalary() {
+        return 0;
+    }
+
+    @Override
+    public int employeeDOB() {
+        return 0;
+    }
+
+    @Override
+    public int employeeSSN() {
+        return 0;
+    }
+
+    @Override
+    public void employeePTOrFT() {
 
     }
+
+    @Override
+    public boolean employeeIsWorkingFromHome() {
+        return false;
+    }
+
+
+
+
 
     /*
-     You need to implement the logic of this method as such:
-        It should calculate Employee bonus based on salary and performance.
-        It should return the total yearly bonus.
-            Example: 10% of salary for best performance, 8% of salary for average performance and so on.
-            You can set arbitrary number for performance, so you probably need to send 2 arguments.
-     *
-     */
+             You need to implement the logic of this method as such:
+                It should calculate Employee bonus based on salary and performance.
+                It should return the total yearly bonus.
+                    Example: 10% of salary for best performance, 8% of salary for average performance and so on.
+                    You can set arbitrary number for performance, so you probably need to send 2 arguments.
+             *
+             */
+
     public static int calculateEmployeeBonus(int numberOfYearsWithCompany) {
         int total = 0;
         return total;
@@ -75,6 +145,7 @@ public class EmployeeInfo {
 
         return total;
     }
+
 
     private static class DateConversion {
 
