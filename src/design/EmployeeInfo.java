@@ -65,6 +65,14 @@ public class EmployeeInfo extends abstractClass implements Employee {
         super(LaughForLaughs);
     }
 
+    public boolean setEmployeeAge(int i) {
+        return false;
+    }
+
+    public int getEmployeeAge() {
+        return 0;
+    }
+
     @Override
     public int employeeId() {
         return 0;

@@ -92,4 +92,7 @@ public abstract class abstractClass implements Employee {
     }
 
 
+    public abstract boolean setEmployeeAge(int i);
+
+    public abstract int getEmployeeAge();
 }
