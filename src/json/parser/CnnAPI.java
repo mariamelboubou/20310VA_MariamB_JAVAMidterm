@@ -46,12 +46,12 @@ public class CnnAPI {
      */
 
     public static void main(String[] args) throws IOException, JSONException {
-        String apiKey = "";
+        String apiKey = "3c735a3abf7a4fa7817ef8503a7cc378";
         String URL = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=" + apiKey;
 
         JSONObject rootObject = new JSONObject(new String(Files.readAllBytes(new File("src/json/parser/data.json").toPath())));
 
-        // Continue implementing here..
+
     }
 
 }
